@@ -18,6 +18,7 @@ namespace JobApplicationTracker
         {
             get
             {
+                // Format for displaying job app info that is searched for by the user
                 return $"{ Company } / { Position } / { Location } ({ Link })";
             }
         }

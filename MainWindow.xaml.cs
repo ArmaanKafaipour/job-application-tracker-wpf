@@ -25,7 +25,6 @@ namespace JobApplicationTracker
     public partial class MainWindow : Window
     {
 
-        public List<Person> people = new List<Person>();
         public List<JobApp> jobApps = new List<JobApp>();
 
 
@@ -35,9 +34,6 @@ namespace JobApplicationTracker
 
 
             UpdateBinding();
-
-
-            //myComboBox.ItemsSource = people;
         }
 
         private void UpdateBinding()
@@ -68,6 +64,7 @@ namespace JobApplicationTracker
         {
             DataAccess db = new DataAccess();
 
+            // Override list of job apps with search results
             jobApps = db.GetJobApp(searchText.Text);
 
             UpdateBinding();

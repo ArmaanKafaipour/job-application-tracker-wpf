@@ -52,41 +52,16 @@
         <TextBox x:Name="linkText" Grid.Column="2" Grid.Row="5" Width="500" Margin="10, 0, 0, 0" />
 
         <Button x:Name="submitButton" Content="Enter Job Application" Grid.Column="1" Grid.Row="6" 
-                Grid.ColumnSpan="2" Margin="10,0" Click="SubmitButton_Click"/>
+                Grid.ColumnSpan="2" Margin="10,20" Click="SubmitButton_Click" Grid.RowSpan="2"/>
 
-        <Button x:Name="searchButton" Grid.Column="3" Grid.Row="7" FontWeight="SemiBold"
-                   Content="Search" FontFamily="Segoe UI" Margin="10,0,10,0" Grid.ColumnSpan="2" Height="40" VerticalAlignment="Bottom" Click="searchButton_Click"/>
-        <TextBox x:Name="searchText" Grid.Column="2" Grid.Row="7" Width="500" Margin="10, 0, 0, 0" />
+        <Button x:Name="searchButton" Grid.Column="4" Grid.Row="11" FontWeight="SemiBold"
+                   Content="Search" FontFamily="Segoe UI" Margin="10,0,10,301" Height="40" VerticalAlignment="Bottom" Click="searchButton_Click"/>
+        <TextBox x:Name="searchText" Grid.Column="1" Grid.Row="11" Margin="20,81,0,301" Grid.ColumnSpan="2" />
 
 
         <ListBox x:Name="listBox1" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="8" Grid.RowSpan="4" 
-                 Margin="20,20,20,20" />
+                 Margin="20,151,10,55" />
 
-        <!--<ComboBox x:Name="myComboBox" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Margin="10">
-            <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="C:\Users\Armaan\Pictures\car pics\image1.jpg" Height="20" Width="20" />
-                        <TextBlock Text="{Binding FirstName}" />
-                        <TextBlock Text=" " />
-                        <TextBlock Text="{Binding LastName}" />
-                    </StackPanel>
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
-        </ComboBox>-->
-
-        
-
-        <!--<Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="6" 
-               Source="C:\Users\Armaan\Pictures\car pics\image1.jpg" />-->
-
-        <!--<ScrollViewer Grid.Row="1" Grid.Column="4" Grid.RowSpan="6" >
-            <StackPanel  Orientation="Vertical">
-            <Image MaxHeight="200" MaxWidth="200" Source="C:\Users\Armaan\Pictures\car pics\image1.jpg" />
-            <Image MaxHeight="200" MaxWidth="200" Source="C:\Users\Armaan\Pictures\car pics\image2.jpg" />
-            <Image MaxHeight="200" MaxWidth="200" Source="C:\Users\Armaan\Pictures\car pics\image3.jpg" />
-            </StackPanel>
-        </ScrollViewer>-->
 
     </Grid>
 </Window>
