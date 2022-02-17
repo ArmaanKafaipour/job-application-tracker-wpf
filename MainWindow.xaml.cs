@@ -69,6 +69,16 @@ namespace JobApplicationTracker
 
             UpdateBinding();
         }
+
+        private void searchText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            DataAccess db = new DataAccess();
+
+            // Override list of job apps with search results
+            jobApps = db.GetJobApp(searchText.Text);
+
+            UpdateBinding();
+        }
     }
 
     //Feature to add
