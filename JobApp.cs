@@ -8,7 +8,6 @@ namespace JobApplicationTracker
 {
     public class JobApp
     {
-        public int id { get; set; }
         public string Company { get; set; }
         public string Position { get; set; }
         public string Location { get; set; }
